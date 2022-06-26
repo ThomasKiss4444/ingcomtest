@@ -3,9 +3,9 @@ import LIST_TYPES from "../classes/ListTypes";
 </script>
 
 <template>
-   <div class="nav-content py-3 container d-none d-md-flex">
-      <nav class="w-100">
-         <div :class="'nav-item ' + (selectedMenu === LIST_TYPES.ALL ? 'button_selected' : '')">
+   <div class="nav-content py-3 container d-none d-lg-flex px-0 px-xl-3">
+      <nav class="d-flex w-100">
+         <div :class="'nav-item w-100 ' + (selectedMenu === LIST_TYPES.ALL ? 'button_selected' : '')">
             <RouterLink class="col p-0 d-flex align-items-center" to="/"
                @click="selectedMenu = LIST_TYPES.ALL"
             >
@@ -13,7 +13,7 @@ import LIST_TYPES from "../classes/ListTypes";
                <span>Lista</span>
             </RouterLink>
          </div>
-         <div :class="'nav-item ' + (selectedMenu === LIST_TYPES.FAVORITES ? 'button_selected' : '')">
+         <div :class="'nav-item w-100 ' + (selectedMenu === LIST_TYPES.FAVORITES ? 'button_selected' : '')">
             <RouterLink class="col p-0 d-flex align-items-center" to="/favorites"
                @click="selectedMenu = LIST_TYPES.FAVORITES"
             >
@@ -48,7 +48,6 @@ export default {
    line-height: 16px;
    color: #323EC8;
    height: 44px;
-   width: 100%;
 }
 
 .nav-item a {
@@ -74,11 +73,9 @@ export default {
 }
 
 nav {
-   display: flex;
    flex-direction: column;
    align-items: center;
    padding: 20px;
-   width: 260px;
    height: 140px;
    background: #FFFFFF;
    box-shadow: 0px 0px 20px rgba(50, 62, 200, 0.1);

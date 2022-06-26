@@ -4,8 +4,8 @@ import MobileMenu from "./../components/MobileMenu.vue";
 </script>
 
 <template>
-   <MobileMenu />
-   <div class="d-flex list-container container-fluid container-md">
+   <MobileMenu class="d-lg-none" />
+   <div class="d-flex list-container container-fluid container-xxl">
       <Menu class="col-2"></Menu>
       <div class="container col py-3">
          <div class="filter-sort d-flex justify-content-between align-items-center px-3 px-md-5" @click="sortByDate()">
@@ -133,6 +133,7 @@ export default {
 .list-image {
    background: #637181;
    height: 180px;
+   width: 180px;
    object-fit: cover;
 }
 
@@ -170,6 +171,7 @@ export default {
 
    .list-image {
       height: 140px;
+      width: 100%;
    }
 
    .list-item {
