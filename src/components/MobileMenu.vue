@@ -3,7 +3,7 @@ import LIST_TYPES from "../classes/ListTypes";
 </script>
 
 <template>
-   <div class="nav-content container d-flex flex-row d-md-none">
+   <div class="nav-content container d-flex flex-row">
       <nav class="navbar navbar-light bg-white">
          <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false">
